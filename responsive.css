@@ -1,0 +1,48 @@
+@media (width <=576px){
+
+    .navContainer{
+        padding: 0 6rem;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .heroImage{
+        height: 54rem;
+    }
+
+    .contact,
+    .navLinks{
+        display: none;
+    }
+
+    .visionBody{
+        grid-template-columns: 1fr 1fr;
+    }  
+
+    .visionImage3{
+        padding-top: 4rem;
+    }
+
+    .welcomeBody{
+        grid-template-columns: 1fr;
+    }
+
+    .cardTitle{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        margin-left: 9rem;
+    }  
+
+    .primary{
+        margin-bottom: 2rem;
+    }
+
+    .secondary{
+        margin-bottom: 2rem;
+    }
+}

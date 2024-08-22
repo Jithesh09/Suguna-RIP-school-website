@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Default code starts here */
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-wrap: pretty;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f0f8ff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button{
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #66bc4c;
+    --secondaryColor: #ffc000;
+    --orange: #f46400;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffprimary: "Open Sans", sans-serif;
+    --ffsecondary: "Merienda", cursive;
+}
+
+/* body code starts here */
+
+body{
+    font-family: var(--ffprimary);
+}
+
+/* body code ends here */
+
+/* Default code ends here */
+
+/* Parent container code starts here */
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+/* Parent container code ends here */
+
+/* row default code starts here */
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* row default code ends here */
+
+
+/* Column default code starts here */
+
+.dflex-left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+}
+
+.dflex-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* column default code ends here */
+
+/* component container starts here */
+
+.align{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.align-2{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 3rem; 
+}
+
+/* component container ends here */
+
+/* component starts here */
+
+.componentSpacing{
+    padding: 3rem 0;
+}
+
+/* component ends here */
+
+/* animation start */
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(180deg);
+    }
+
+     transform: rotateY(180deg);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* animation end */
+
+/* content container code starts here */
+
+.navContainer{
+    background-color: var(--primaryColor);
+    /* position: fixed; */
+}
+
+.navBar{
+    padding: 0 0 3rem 0;
+}
+
+.contact p{
+    font-size: 1.3rem;
+}
+
+.contactUs{
+    color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.mail{
+    font-size: 1.3rem;
+    color: #fdfd05;
+    margin: 1rem 0;   
+}
+
+.navLogo{
+    background-color: #ffffff;
+}
+
+.logo{
+    width: 30%;
+    padding: 2rem 3rem;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navLinks ul{
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 2rem 0; */
+    list-style: none;
+    font-size: var(--regularFont);
+    font-weight: bold; 
+}
+
+.navLinks li{
+    padding: 2rem;
+}
+
+.navLinks li:hover{
+    background-color: var(--orange);
+}
+
+.heroImage{
+    background-image: url(assets/images/herosection.png);
+    width: auto;
+    height: 50rem;
+    margin-bottom: 3rem;
+}
+
+.visionBody{
+    margin-bottom: 3rem;
+}
+
+.visionBody h3{
+   font-size: medium; 
+}
+
+.visionImage1 img:hover{
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.visionImage2 img:hover{
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;  
+    animation-fill-mode: forwards;
+}
+
+.visionImage3 img:hover{
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;  
+    animation-fill-mode: forwards; 
+}
+
+.admissionTitle{
+    margin-bottom: 5rem;
+    
+}
+
+.admissionTitle h2{
+    font-size: xx-large;
+}
+
+.clickHere i{
+    margin-right: 1rem;
+}
+
+.clickHere button{
+    border-radius: 5rem;
+    padding: 1rem;
+    border: none;
+    padding: 2rem;
+    background-color: var(--orange);
+    color: #ffffff;
+    font-size: medium;
+    margin-bottom: 3rem;
+}
+
+.clickHere button:hover{
+    background-color: var(--secondaryColor);
+}
+
+.bodyContent{
+    padding-right: 2rem;
+    
+}
+
+.bodyContent p{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #858484;
+}
+
+.bodyContent h2{
+    margin-bottom: 1rem;
+    font-size: xx-large;
+    
+}
+
+.bodyContent i{
+    margin-bottom: 2rem;
+    font-size: 8rem;
+    color: var(--primaryColor);  
+}
+
+.down img{
+    position: relative;
+    top: -5rem;
+    
+}
+
+.schoolFeatures{
+   animation-name: fadeIn;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: forwards
+}
+
+.cards{
+    margin-bottom: 2rem;
+}
+.primaryHeader{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background-color: #ffc000;
+    font-size: 1.5rem;
+}
+
+/* .primaryHeader h2{
+    padding: 0 15rem;
+} */
+
+
+.primary{
+    /* background-color: var(--secondaryColor); */
+    width: 35rem;
+}
+
+.primaryBody{
+    background-color: var(--secondaryColor);
+    width: 100%;
+}
+
+.primary i{
+    font-size: 7rem; 
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+
+.primary h3{
+    font-size: large;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.primary button{
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    font-size: medium;
+    color: var(--secondaryColor);
+}
+
+.primary button:hover{
+    color: #ffffff;
+    background-color: var(--orange);
+}
+
+.secondaryHeader{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background-color: var(--primaryColor);
+    font-size: 1.5rem;
+}
+
+.secondaryBody{
+    width: 100%;
+    background-color: var(--primaryColor);
+}
+
+.secondary{
+    /* background-color: var(--primaryColor);  */
+    width: 35rem; 
+}
+
+.secondary i{
+    font-size: 7rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem; 
+    color: #ffffff;
+}
+
+.secondary h3{
+    font-size: large;  
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.secondary button{
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    font-size: medium;
+    color: var(--primaryColor);
+}
+
+.secondary button:hover{
+    color: #ffffff;
+    background-color: var(--secondaryColor);
+}
+
+
+.higherSecondary{
+    /* font-size: medium; */
+    width: 35rem;
+}
+
+.higherSecondaryHeader{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background-color: var(--orange);
+    font-size: 1.5rem;
+}
+
+.higherSecondaryBody{
+    background-color: var(--orange); 
+    width: 100%;
+}
+
+.higherSecondary i{
+    font-size: 7rem;  
+    margin-bottom: 3rem;
+    margin-top: 3rem;  
+    color: #ffffff;
+}
+
+.higherSecondary h3{
+    font-size: large;
+    margin-bottom: 3rem;  
+    color: #ffffff;
+}
+
+.higherSecondary button{
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    font-size: medium;
+    color: var(--orange);
+}
+
+.higherSecondary button:hover{
+    color: #ffffff;
+    background-color: var(--secondaryColor);
+}
+
+
+.featuresBody p{
+    margin-bottom: 2rem;
+    font-size: medium;
+    margin-right: 17rem;
+    margin-left: 15rem;
+}
+
+.featuresBody h2{
+    font-size: x-large; 
+    margin-bottom: 2rem; 
+}
+
+.featuresBody button{
+    border-width: 2rem;
+    border-color: var(--secondaryColor);
+    border-radius: 5rem; 
+    padding: 2rem 3rem;
+    color: var(--secondaryColor);
+    font-size: large;
+}
+
+.featuresBody button:hover{
+    border-color: var(--orange);
+}
+
+.featureBody button i{
+    margin-right: 2rem;
+}
+
+.copyrightContent{
+    color: #ffffff;
+    padding: 2.5rem;
+    background-color: var(--primaryColor);
+   font-size: medium; 
+}
+
+/* content container code ends here */
+
